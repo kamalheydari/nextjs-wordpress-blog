@@ -1,12 +1,17 @@
 import { GlobalStyles } from "twin.macro";
-import Navigation from "./Navigation";
-const Layout = ({ children,  }) => {
+
+import { Navigation, Footer } from ".";
+
+import { LayoutWrapper } from "../styles/CustomStyles.styles";
+
+const Layout = ({ children }) => {
   return (
-    <>
+    <LayoutWrapper>
       <GlobalStyles />
-      <Navigation  />
+      <Navigation />
       {children}
-    </>
+      <Footer />
+    </LayoutWrapper>
   );
 };
 

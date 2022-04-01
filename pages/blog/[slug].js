@@ -1,23 +1,30 @@
-import Image from 'next/image';
-import Layout from "../../components/Layout";
+import Image from "next/image";
+
 import { getAllPostsWithSlug, getPost } from "../../lib/api";
-import { PostPageWrapper,Title,Content } from "../../styles/CustomStyles.styles";
+
+import { Layout } from "../../components";
+
+import {
+  PostPageWrapper,
+  Title,
+  Content,
+} from "../../styles/CustomStyles.styles";
 
 export default function PostPage({ postData }) {
-    return (
-        <Layout>
-          <PostPageWrapper>
-            <Image
-              src={postData.featuredImage.node.mediaItemUrl}
-              width={1000}
-              height={400}
-              alt={postData.title}
-            />
-            <Title dangerouslySetInnerHTML={{ __html: postData.title }} />
-            <Content dangerouslySetInnerHTML={{ __html: postData.content }} />
-          </PostPageWrapper>
-        </Layout>
-      );
+  return (
+    <Layout>
+      <PostPageWrapper>
+        <Image
+          src={postData.featuredImage.node.mediaItemUrl}
+          width={1000}
+          height={400}
+          alt={postData.title}
+        />
+        <Title dangerouslySetInnerHTML={{ __html: postData.title }} />
+        <Content dangerouslySetInnerHTML={{ __html: postData.content }} />
+      </PostPageWrapper>
+    </Layout>
+  );
 }
 
 export async function getStaticPaths() {

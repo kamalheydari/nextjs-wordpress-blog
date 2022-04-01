@@ -1,6 +1,6 @@
-import Layout from "../../components/Layout";
-import Post from "../../components/Post";
 import { getAllCategories, getCategoryPosts } from "../../lib/api";
+
+import {Layout,Post} from '../../components';
 
 export default function Category({ categoryPosts }) {
   const posts = categoryPosts.category.posts.edges;

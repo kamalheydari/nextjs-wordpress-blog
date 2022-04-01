@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 import { NavigationWrapper } from "../styles/CustomStyles.styles";
 
 const Navigation = () => {

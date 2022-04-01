@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+
 import { PostWrapper, Title } from "../styles/CustomStyles.styles";
 
 const Post = ({ post }) => {
@@ -9,7 +10,7 @@ const Post = ({ post }) => {
         <Image
           src={post.featuredImage.node.mediaItemUrl}
           width={720}
-          height={400}
+          height={420}
           alt={post.title}
         />
       </div>
