@@ -52,6 +52,7 @@ export default function Home({
 export async function getStaticProps() {
   const allPosts = await getAllPosts();
   const ACfildes = await getACFDetails();
+  
   return {
     props: { allPosts, ACfildes },
   };

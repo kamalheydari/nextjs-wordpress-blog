@@ -8,9 +8,9 @@ const Navigation = () => {
 
   const menuItems = [
     { id: 0, name: "Home", path: "/" },
-    { id: 1, name: "Music", path: "/category/dGVybTo1Mg==" },
-    { id: 2, name: "Art", path: "/category/dGVybTo1NQ==" },
-    { id: 3, name: "Movie", path: "/category/dGVybTo0OQ==" },
+    { id: 1, name: "Music", path: "/category/dGVybToxMQ==" },
+    { id: 2, name: "Art", path: "/category/dGVybTo4" },
+    { id: 3, name: "Movie", path: "/category/dGVybToxMA==" },
   ];
 
   return (
